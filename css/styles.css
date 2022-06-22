@@ -1,0 +1,83 @@
+/* https://www.fontsquirrel.com/fonts/cowboy-hippie-pro */
+@font-face {
+  font-family: "Cowboy Hippie Pro";
+  src: url("../font/Cowboy_Hippie_Pro.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #6D6875;
+  color: #FFCDB1;
+  font-family: sans-serif;
+}
+
+a {
+  color: #E5989B;
+  text-decoration: none;
+}
+a:visited {
+  color: #E5989B;
+}
+a:hover {
+  color: #FFB4A2;
+}
+a:active {
+  color: #FFCDB1;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 33% auto;
+  height: 100vh;
+}
+
+.left-half,
+.right-half {
+  position: relative;
+}
+
+.left-half {
+  background-image: url("../img/bg.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: column;
+}
+.left-half > p {
+  font-weight: bold;
+  font-size: 0.8rem;
+  color: #FFCDB1;
+  background-color: rgba(109, 104, 117, 0.6);
+  width: 100%;
+  text-align: center;
+}
+
+.logo {
+  background-color: rgba(109, 104, 117, 0.6);
+  position: absolute;
+  top: 30%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.logo img {
+  height: 60px;
+}
+.logo h1 {
+  padding-left: 10px;
+  display: inline-block;
+  font-family: "cowboy Hippie Pro", sans-serif;
+  color: #FFCDB1;
+  font-size: 50px;
+}
+
+/*# sourceMappingURL=styles.css.map */
