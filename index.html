@@ -7,36 +7,50 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/styles.css">
 
     <script src="js/main.js" defer></script>
   </head>
   <body>
-    <div class="side-logo">
-      <img src="./img/logo.png" alt="logo">
-      <span>SoftAnnaLee</span>
-      <p>Photo by <a href="https://unsplash.com/@porkbellysteve">Stephen Andrews</a> on <a href="https://unsplash.com/photos/lEe3-hTg4Vg">Unsplash</a></p>
+    <div class="grid">
+      <div class="left-half">
+        <a href="#" class="logo">
+            <img src="./img/logo.png" alt="logo">
+            <h1>SoftAnnaLee</h1>
+        </a>
+        <p>Photo by <a href="https://unsplash.com/@porkbellysteve">Stephen Andrews</a> on <a href="https://unsplash.com/photos/lEe3-hTg4Vg">Unsplash</a></p>
+      </div>
+
+      <div class="right-half">
+        <div class="form-descriptor">
+          <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.</p>
+          <p>Sign up <em>now</em> to get started.</p>
+          <p>You <em>know</em> you want to.</p>
+        </div>
+        <form action="_self" method="POST" autocomplete="on" name="sign-up">
+          <div class="form_background">
+            <h2>Let's do this!</h2>
+            <label for="first_name">First Name</label>
+            <input type="text" name="first_name" id="first_name" autocomplete="given-name" required>
+            <label for="last_name">Last Name</label>
+            <input type="text" name="last_name" id="last_name" autocomplete="family-name" required>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" autocomplete="email" required>
+            <label for="phone">Phone Number</label>
+            <input type="tel" name="phone" id="phone" autocomplete="tel" required>
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" autocomplete="new-password" required>
+            <span class="password-error"></span>
+            <label for="confirm_password">First Name</label>
+            <input type="password" name="confirm_password" id="confirm_password" autocomplete="new-password" required>
+          </div>
+        </form>
+        <button type="submit">Create Account</button>
+        <p>Already have an acount? <a href="#">Log in</a></p>
+      </div>
+
     </div>
-    <div class="form-descriptor">
-      <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.</p>
-      <p>Sign up <em>now</em> to get started.</p>
-      <p>You <em>know</em> you want to.</p>
-    </div>
-    <form action="_self" method="POST" autocomplete="on" name="sign-up">
-      <h2>Let's do this!</h2>
-      <label for="first_name">First Name</label>
-      <input type="text" name="first_name" id="first_name" autocomplete="given-name" required>
-      <label for="last_name">Last Name</label>
-      <input type="text" name="last_name" id="last_name" autocomplete="family-name" required>
-      <label for="email">Email</label>
-      <input type="email" name="email" id="email" autocomplete="email" required>
-      <label for="phone">Phone Number</label>
-      <input type="tel" name="phone" id="phone" autocomplete="tel" required>
-      <label for="password">Password</label>
-      <input type="password" name="password" id="password" autocomplete="new-password" required>
-      <label for="confirm_password">First Name</label>
-      <input type="password" name="confirm_password" id="confirm_password" autocomplete="new-password" required>
-    </form>
   </body>
 </html>
