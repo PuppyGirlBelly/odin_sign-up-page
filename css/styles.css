@@ -11,6 +11,12 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: "Work Sans";
+  src: url("../font/WorkSans-SemiBold.ttf") format("truetype");
+  font-weight: semi-bold;
+  font-style: normal;
+}
 * {
   margin: 0px;
   padding: 0px;
@@ -20,9 +26,10 @@
 body {
   max-width: 1440px;
   margin: 0 auto;
-  background-color: #6D6875;
+  background-color: #FFCDB1;
   color: #FFCDB1;
   font-family: "Work Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  font-weight: semi-bold;
 }
 
 a {
@@ -84,6 +91,10 @@ a:active {
   font-family: "cowboy Hippie Pro", sans-serif;
   color: #FFCDB1;
   font-size: 50px;
+}
+
+.right-half {
+  background-color: #6D6875;
 }
 
 .form-descriptor {
