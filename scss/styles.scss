@@ -26,6 +26,8 @@ $color-5: #6D6875;
 }
 
 body {
+  max-width: 1440px;
+  margin: 0 auto;
   background-color: $color-5;
   color: $color-1;
   font-family: 'Work Sans', -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
@@ -50,7 +52,7 @@ a {
 
 .grid {
   display: grid;
-  grid-template-columns: 33% auto;
+  grid-template-columns: 525px auto;
   height: 100vh;
 }
 
@@ -60,7 +62,7 @@ a {
 }
 
 .left-half{
-  background-image: url("../img/bg.jpg");
+  background-image: url("../img/bg.png");
   background-size: cover;
   background-position: center;
   display: flex;
@@ -88,10 +90,6 @@ a {
   align-items: center;
   justify-content: center;
 
-  img {
-    height: 60px;
-  }
-
   h1 {
     padding-left: 10px;
     display: inline-block;
@@ -99,4 +97,10 @@ a {
     color: $color-1;
     font-size: 50px;
   }
+}
+
+.form-descriptor {
+  margin: 175px 125px 75px 50px;
+  font-size: 1.5rem;
+  line-height: 1;
 }
