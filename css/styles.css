@@ -5,6 +5,12 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: "Work Sans";
+  src: url("../font/WorkSans-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
 * {
   margin: 0px;
   padding: 0px;
@@ -14,7 +20,7 @@
 body {
   background-color: #6D6875;
   color: #FFCDB1;
-  font-family: sans-serif;
+  font-family: "Work Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 }
 
 a {
@@ -58,6 +64,7 @@ a:active {
   background-color: rgba(109, 104, 117, 0.6);
   width: 100%;
   text-align: center;
+  padding: 0.5rem;
 }
 
 .logo {

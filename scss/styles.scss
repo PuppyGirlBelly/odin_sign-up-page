@@ -6,6 +6,13 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'Work Sans';
+    src: url('../font/WorkSans-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 $color-1: #FFCDB1;
 $color-2: #FFB4A2;
 $color-3: #E5989B;
@@ -21,7 +28,7 @@ $color-5: #6D6875;
 body {
   background-color: $color-5;
   color: $color-1;
-  font-family: sans-serif;
+  font-family: 'Work Sans', -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
 }
 
 a {
@@ -68,6 +75,7 @@ a {
     background-color: rgba($color-5, 0.6);
     width: 100%;
     text-align: center;
+    padding: 0.5rem;
   }
 }
 
