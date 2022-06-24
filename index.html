@@ -16,8 +16,8 @@
     <div class="grid">
       <div class="left-half">
         <a href="#" class="logo">
-            <img src="./img/sm-logo.png" alt="logo">
-            <h1>SoftAnnaLee</h1>
+          <img src="./img/sm-logo.png" alt="logo">
+          <h1>SoftAnnaLee</h1>
         </a>
         <p>Photo by <a href="https://unsplash.com/@porkbellysteve">Stephen Andrews</a> on <a href="https://unsplash.com/photos/lEe3-hTg4Vg">Unsplash</a></p>
       </div>
@@ -30,24 +30,37 @@
           <p>You <em>know</em> you want to.</p>
         </div>
         <form action="_self" method="POST" autocomplete="on" name="sign-up">
-          <div class="form_background">
+          <div class="form-background">
             <h2>Let's do this!</h2>
-            <label for="first_name">First Name</label>
-            <input type="text" name="first_name" id="first_name" autocomplete="given-name" required>
-            <label for="last_name">Last Name</label>
-            <input type="text" name="last_name" id="last_name" autocomplete="family-name" required>
-            <label for="email">Email</label>
-            <input type="email" name="email" id="email" autocomplete="email" required>
-            <label for="phone">Phone Number</label>
-            <input type="tel" name="phone" id="phone" autocomplete="tel" required>
-            <label for="password">Password</label>
-            <input type="password" name="password" id="password" autocomplete="new-password" required>
-            <span class="password-error"></span>
-            <label for="confirm_password">First Name</label>
-            <input type="password" name="confirm_password" id="confirm_password" autocomplete="new-password" required>
+            <div class="input-label">
+              <label for="first_name">First Name</label>
+              <input type="text" name="first_name" id="first_name" autocomplete="given-name" required>
+            </div>
+            <div class="input-label">
+              <label for="last_name">Last Name</label>
+              <input type="text" name="last_name" id="last_name" autocomplete="family-name" required>
+            </div>
+            <div class="input-label">
+              <label for="email">Email</label>
+              <input type="email" name="email" id="email" autocomplete="email" required>
+            </div>
+            <div class="input-label">
+              <label for="phone">Phone Number</label>
+              <input type="tel" name="phone" id="phone" autocomplete="tel" required>
+            </div>
+            <div class="input-label">
+              <label for="password">Password</label>
+              <input type="password" name="password" id="password" autocomplete="new-password" required>
+              <p class="password-error"> </p>
+            </div>
+            <div class="input-label">
+              <label for="confirm_password">Confirm Password</label>
+              <input type="password" name="confirm_password" id="confirm_password" autocomplete="new-password" required>
+            </div>
           </div>
+          <button type="submit">Create Account</button>
         </form>
-        <button type="submit">Create Account</button>
+
         <p>Already have an acount? <a href="#">Log in</a></p>
       </div>
 
