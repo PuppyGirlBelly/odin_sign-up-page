@@ -178,11 +178,21 @@ form {
     margin: 35px 50px;
     width: 235px;
     height: 50px;
-    background-color: $color-5;
+    background-color: $color-4;
     color: $color-1;
     border: 0px solid black;
     border-radius: 6px;
     box-shadow: 2px 4px 4px 0 rgba($color-4, .5);
+
+    &:hover {
+      background-color: $color-3;
+      color: $color-5;
+    }
+
+    &:active {
+      background-color: $color-4;
+      color: $color-1;
+    }
   }
 }
 

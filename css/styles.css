@@ -155,11 +155,19 @@ form button {
   margin: 35px 50px;
   width: 235px;
   height: 50px;
-  background-color: #6D6875;
+  background-color: #B5838D;
   color: #FFCDB1;
   border: 0px solid black;
   border-radius: 6px;
   box-shadow: 2px 4px 4px 0 rgba(181, 131, 141, 0.5);
+}
+form button:hover {
+  background-color: #E5989B;
+  color: #6D6875;
+}
+form button:active {
+  background-color: #B5838D;
+  color: #FFCDB1;
 }
 
 .right-half > p {
