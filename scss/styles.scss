@@ -7,16 +7,16 @@
 }
 
 @font-face {
-    font-family: 'Work Sans';
-    src: url('../font/WorkSans-Regular.ttf') format('truetype');
+    font-family: 'Inter';
+    src: url('../font/Inter-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Work Sans';
-    src: url('../font/WorkSans-SemiBold.ttf') format('truetype');
-    font-weight: semi-bold;
+    font-family: 'Inter';
+    src: url('../font/Inter-Medium.ttf') format('truetype');
+    font-weight: medium;
     font-style: normal;
 }
 
@@ -36,8 +36,8 @@ body {
   max-width: 1440px;
   margin: 0 auto;
   background-color: $color-5;
-  font-family: 'Work Sans', -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
-  font-weight: semi-bold;
+  font-family: 'Inter', -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+  font-weight: medium;
 }
 
 a {
@@ -109,28 +109,32 @@ a {
 .right-half {
   background-color: $color-1;
   color: $color-5;
+  box-shadow: inset 3px 0 3px -2px rgba($color-4, .5);
 }
 
 .form-descriptor {
-  margin: 175px 125px 75px 50px;
-  font-size: 1.5rem;
-  line-height: 1;
+  margin: 150px 125px 75px 50px;
+  font-size: 1.6rem;
+  line-height: 1.1;
+  letter-spacing: -1px;
 }
 
 .form-background {
   background-color: $color-4;
   color: $color-1;
+  margin-bottom: 30px;
   padding: 20px 0 0 50px;
   display: grid;
   grid-template-columns: repeat(2, auto);
   grid-template-rows: repeat(4, auto);
   justify-content: start;
-  box-shadow :0 4px 4px -2px rgba($color-4, .5), 0 -3px 3px -2px rgba($color-4, .5);
+  box-shadow :0 4px 4px 0 rgba($color-4, .5), 0 -3px 3px -2px rgba($color-4, .5);
 
   > h2 {
     grid-column-start: 1;
     grid-column-end: 3;
     margin-bottom: 20px;
+    font-weight: bold;
   }
 
   label, input {
@@ -161,4 +165,8 @@ a {
     margin-bottom: 24px;
     margin-right: 80px;
   }
+}
+
+form > button {
+
 }
