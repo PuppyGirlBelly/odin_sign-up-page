@@ -159,7 +159,7 @@ form input:valid {
   background-repeat: no-repeat;
   background-image: url("../img/thumb.png");
 }
-form input:blank {
+form input:placeholder-shown {
   background-image: unset;
 }
 form .input-label {

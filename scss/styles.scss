@@ -182,7 +182,7 @@ form {
       background-image: url("../img/thumb.png");
     }
 
-    &:blank {
+    &:placeholder-shown {
       background-image: unset;
     }
   }
