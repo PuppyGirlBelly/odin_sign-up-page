@@ -164,6 +164,12 @@ form .input-label {
   margin-bottom: 24px;
   margin-right: 80px;
 }
+form .error {
+  display: block;
+  height: 0.5rem;
+  font-size: 0.75rem;
+  padding-top: 0.25rem;
+}
 form button {
   margin: 35px 50px;
   width: 235px;
