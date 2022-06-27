@@ -95,7 +95,7 @@ a:active {
   display: inline-block;
   font-family: "cowboy Hippie Pro", sans-serif;
   color: #FFCDB1;
-  font-size: 50px;
+  font-size: 3.125rem;
 }
 
 .right-half {
@@ -146,6 +146,21 @@ form input {
 form input:focus {
   outline: 2px solid #FFB4A2;
   box-shadow: 3px 3px 3px 2px rgba(109, 104, 117, 0.5);
+}
+form input:invalid {
+  background-size: auto 70%;
+  background-position: right 5px center;
+  background-repeat: no-repeat;
+  background-image: url("../img/x.png");
+}
+form input:valid {
+  background-size: auto 70%;
+  background-position: right 5px center;
+  background-repeat: no-repeat;
+  background-image: url("../img/thumb.png");
+}
+form input:blank {
+  background-image: unset;
 }
 form .input-label {
   margin-bottom: 24px;
