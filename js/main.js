@@ -5,6 +5,8 @@
 const pass1 = document.getElementById('password');
 const pass2 = document.getElementById('confirm_password');
 const passError = document.getElementById('password-error');
+const email = document.getElementById('email');
+const phone = document.getElementById('phone');
 
 function checkValuesNotEmptyAndMatch(val1, val2) {
   if (!val1) return true;
@@ -13,7 +15,7 @@ function checkValuesNotEmptyAndMatch(val1, val2) {
   return false;
 }
 
-function displayPasswordStatus(event) {
+function displayPasswordStatus() {
   const match = checkValuesNotEmptyAndMatch(pass1.value, pass2.value);
 
   if (match) {
@@ -27,9 +29,31 @@ function displayPasswordStatus(event) {
   }
 }
 
+function displayErrorStatus(event) {
+  // Validate the field
+  const isValid = event.target.validity.valid;
+  const message = event.target.validationMessage;
+  const connectedValidationId = event.target.getAttribute('aria-describedby');
+  const connectedValidation = connectedValidationId
+    ? document.getElementById(connectedValidationId)
+    : false;
+
+  if (connectedValidation && message && !isValid) {
+    connectedValidation.innerText = message;
+  } else {
+    connectedValidation.innerText = '';
+  }
+}
+
 pass1.addEventListener('blur', (event) => {
-  displayPasswordStatus(event);
+  displayPasswordStatus();
 });
 pass2.addEventListener('blur', (event) => {
-  displayPasswordStatus(event);
+  displayPasswordStatus();
+});
+email.addEventListener('blur', (event) => {
+  displayErrorStatus(event);
+});
+phone.addEventListener('blur', (event) => {
+  displayErrorStatus(event);
 });

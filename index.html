@@ -44,17 +44,17 @@
             <div class="input-label">
               <label for="email">Email</label>
               <input type="email" name="email" id="email" autocomplete="email" placeholder=" " required>
-              <span class="error" id="email-error"><span>
+              <span class="error" id="email-error" aria-live="assertive"><span>
             </div>
             <div class="input-label">
               <label for="phone">Phone Number</label>
-              <input type="tel" name="phone" id="phone" autocomplete="tel" placeholder=" " minlength="9" required>
-              <span class="error" id="phone-error"><span>
+              <input type="tel" name="phone" id="phone" autocomplete="tel" placeholder=" " minlength="10" aria-describedby="email-desc" required>
+              <span class="error" id="phone-error" aria-live="assertive"><span>
             </div>
             <div class="input-label">
               <label for="password">Password</label>
               <input type="password" name="password" id="password" autocomplete="new-password" placeholder=" " required>
-              <span class="error" id="password-error"><span>
+              <span class="error" id="password-error" aria-live="assertive"><span>
             </div>
             <div class="input-label">
               <label for="confirm_password">Confirm Password</label>
