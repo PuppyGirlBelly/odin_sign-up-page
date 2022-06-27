@@ -157,7 +157,7 @@ form input:valid {
   background-size: auto 70%;
   background-position: right 5px center;
   background-repeat: no-repeat;
-  background-image: url("../img/thumb.png");
+  background-image: url("../img/check.png");
 }
 form input:placeholder-shown {
   background-image: unset;
